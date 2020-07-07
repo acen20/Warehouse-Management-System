@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{55A65FB1-8D27-4B24-AD94-403FCB2D6B94}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Warehouse</RootNamespace>
+    <AssemblyName>Warehouse</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\..\..\Desktop\Backups\2march stable\Warehouse2.0\Warehouse\bin\Debug\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework">
+      <HintPath>..\..\..\..\..\Desktop\Backups\2march stable\Warehouse2.0\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addProductForm.designer.cs">
+      <DependentUpon>addProductForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="assignVan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="assignVan.designer.cs">
+      <DependentUpon>assignVan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="creditReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="creditReport.designer.cs">
+      <DependentUpon>creditReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="dashboard.designer.cs">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="generalProd.cs" />
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="item.cs" />
+    <Compile Include="itemreport.cs" />
+    <Compile Include="loadSheetUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="loadSheetUserControl.designer.cs">
+      <DependentUpon>loadSheetUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manageProducts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="manageProducts.designer.cs">
+      <DependentUpon>manageProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Notification.cs" />
+    <Compile Include="notifications.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="notifications.designer.cs">
+      <DependentUpon>notifications.cs</DependentUpon>
+    </Compile>
+    <Compile Include="orderForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="orderForm.designer.cs">
+      <DependentUpon>orderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="receipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="receipt.designer.cs">
+      <DependentUpon>receipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Records.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Records.designer.cs">
+      <DependentUpon>Records.cs</DependentUpon>
+    </Compile>
+    <Compile Include="report.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="report.designer.cs">
+      <DependentUpon>report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="saleReturn.cs" />
+    <Compile Include="Sales.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sales.designer.cs">
+      <DependentUpon>Sales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Salesman.cs" />
+    <Compile Include="salesReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="salesReport.designer.cs">
+      <DependentUpon>salesReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="salesReturn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="salesReturn.designer.cs">
+      <DependentUpon>salesReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Van.cs" />
+    <Compile Include="vanUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="vanUserControl.designer.cs">
+      <DependentUpon>vanUserControl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addProductForm.resx">
+      <DependentUpon>addProductForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="assignVan.resx">
+      <DependentUpon>assignVan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="creditReport.resx">
+      <DependentUpon>creditReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashboard.resx">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loadSheetUserControl.resx">
+      <DependentUpon>loadSheetUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manageProducts.resx">
+      <DependentUpon>manageProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="notifications.resx">
+      <DependentUpon>notifications.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orderForm.resx">
+      <DependentUpon>orderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="receipt.resx">
+      <DependentUpon>receipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Records.resx">
+      <DependentUpon>Records.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report.resx">
+      <DependentUpon>report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales.resx">
+      <DependentUpon>Sales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="salesReport.resx">
+      <DependentUpon>salesReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="salesReturn.resx">
+      <DependentUpon>salesReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vanUserControl.resx">
+      <DependentUpon>vanUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\Desktop\Backups\2march stable\Warehouse2.0\BuisnessLogicLayer\BuisnessLogicLayer.csproj">
+      <Project>{0c4df7c7-db3a-4aac-a41a-6f855bc1102d}</Project>
+      <Name>BuisnessLogicLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Asset 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Asset 9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Asset 10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Asset 12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Asset 13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Asset 14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Asset 15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Asset 121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\availableVans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\availableVans2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\availableVans3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boxContainer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\creditBTN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboardBTN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deliveries.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deliveries_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\greenButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inventory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inventory1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Manage Company.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manage Inventory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manage Product.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manage supplier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Manage Van.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moneyLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notificationbar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notifybar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notifyBell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orderItem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PLBTN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recentDispatch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\records.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\records_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\returnLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salesBTN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SheetBTN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Truck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Truck1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whiteAddBTN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whiteItem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whiteItem_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whiteTruck.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
